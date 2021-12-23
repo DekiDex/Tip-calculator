@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+
+  <header>
+    <img class="logo" alt="Frontend Mentor | Tip calculator app" src="images/logo.svg">
+  </header>
+
+  <div class="mainbox">
+    <div class="boxone">
+      <form class="billsection">
+        <label class="bill">Bill</label>
+          
+        
+        <input placeholder="0" class="first" type="Number" name="">
+      </form>
+     <div class="select">
+       <label>Select Tip %</label>
+
+       <div class="buttons">
+         <button class="button">5%</button>
+         <button class="button">10%</button>
+         <button class="button active-tip">15%</button>
+         <button class="button">25%</button>
+         <button class="button">50%</button>
+         <div id="custom"><input class="custom" type="Number" name="tip" placeholder="Custom" id="tip"></div>
+       </div>
+     </div>
+
+     <form class="formtwo">
+        <label>Number of People</label>
+          
+          <label for="" class="error">Can't be Zero
+        </label>
+        <input placeholder="0" class="second" type="Number" name="">
+      </form>
+
+    </div>
+
+
+
+
+    <div class="boxtwo">
+      <div class="flexone">
+        <div>
+          <h2 class="tip">Tip Amount</h2>
+          <p class="person">/ person</p>
+        </div>
+
+        <div>
+          <h1 id="amount" class="price amount">$0.00</h1>
+        </div>
+      </div>
+    
+
+    <div class="flextwo">
+        <div>
+          <h2 class="tip">Total</h2>
+          <p class="person">/ person</p>
+        </div>
+
+        <div>
+          <h1 id="total" class="price total">$0.00</h1>
+        </div>
+        </div>
+      <button class="reset">Reset</button>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+<footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+
+</html>

@@ -1,0 +1,324 @@
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+	font-family: 'Space Mono', monospace;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	background: hsl(185, 41%, 84%);
+	margin: 0;
+}
+
+.error {
+  color: red;
+  display: none;
+  position: absolute;
+}
+
+.active-tip {
+  color: hsl(183, 100%, 15%);
+  background: hsl(172, 67%, 45%);
+  font-weight: bolder;
+}
+
+footer {
+	text-align: center;
+	font-size: 30%;
+}
+
+.logo {
+	display: block;
+}
+
+.mainbox {
+	background: #fff;
+	border-radius: 1.5rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.boxtwo {
+	background: hsl(183, 100%, 15%);
+	border-radius: 1rem;
+}
+
+
+label {
+	color: hsl(186, 14%, 43%);
+	font-weight: 700;
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.tip {
+	color: #fff;
+}
+
+p {
+	color: hsl(189, 41%, 97%);
+	opacity: 0.7;
+}
+
+.price {
+	color: hsl(172, 67%, 45%);
+}
+
+.button {
+	border: none;
+	font-family: 'Space Mono', monospace;
+	background: hsl(183, 100%, 15%);
+	color: #fff;
+	border-radius: .5rem;
+}
+
+input {
+	border: none;
+	background: hsl(189, 41%, 97%);
+	text-align: right;
+	font-weight: 700;
+	font-family: 'Space Mono', monospace;
+	color: hsl(186, 14%, 43%);
+}
+
+.custom {
+	background: hsl(189, 41%, 97%);
+	color: hsl(186, 14%, 43%);
+	border-radius: .5rem;
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+	border: 2px solid #fff;
+}
+
+.custom:hover {
+	border: 2px solid hsl(172, 67%, 45%);
+}
+
+.boxtwo > button {
+	border: none;
+	font-family: 'Space Mono', monospace;
+	background: hsl(172, 67%, 45%);
+	color: hsl(183, 100%, 15%);
+	border-radius: .5rem;
+	opacity: 0.2;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.button:hover {
+	color: hsl(183, 100%, 15%);
+	background: hsl(172, 67%, 45%);
+}
+
+.reset:hover {
+	background: hsl(172, 67%, 45%);
+	opacity: 1;
+}
+
+.flextwo {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flexone {
+	display: flex;
+	justify-content: space-between;
+}
+
+.buttons {
+	display: grid;
+}
+
+.first {
+	background-image: url('../images/icon-dollar.svg');
+	background-repeat: no-repeat;
+    background-position: center left .3rem;
+    border: 2px solid #fff;
+}
+
+.first:hover {
+	border: 2px solid hsl(172, 67%, 45%);
+}
+
+.second {
+	background-image: url('../images/icon-person.svg');
+	background-repeat: no-repeat;
+    background-position: center left .3rem;
+}
+
+::placeholder {
+	text-align: right;
+	font-family: 'Space Mono', monospace;
+	color: hsl(184, 14%, 56%)ft;
+}
+
+@media screen and (min-width: 280px) {
+    .logo {
+    	margin: 3rem auto;
+    	width: 95px;
+    	height: auto;
+    }
+
+    h2 {
+    	font-size: 100%;
+    }
+
+    label {
+    	font-size: 100%;
+    }
+
+    input {
+    	font-size: 220%;
+    	display: block;
+    	margin: 0 auto;
+    	width: 290px;
+    }
+
+    .mainbox {
+    	padding: 2rem;
+    	width: 375px;
+    	margin: 0 auto;
+    }
+
+    .buttons {
+    	grid-template-columns: auto auto;
+    	grid-gap: 1rem;	
+    	margin-bottom: 2rem;
+    }
+
+    .button {
+    	font-size: 160%;
+    	width: 146.5px;
+    	height: 50px;
+    }
+
+    .custom {
+        width: 146.5px;
+        height: 50px;   
+    }
+
+    .custom::placeholder {
+    	font-size: 85%;
+    	text-align: right;
+    	padding-right: .3rem;
+    }
+
+    .boxtwo {
+    	padding: 1.5rem;
+    	margin-top: 1.5rem;
+    }
+
+    .tip {
+    	margin-bottom: .3rem;
+    }
+
+    .person {
+    	margin-top: .3rem;
+    }
+
+    .price {
+    	margin-top: .5rem;
+    }
+
+    .reset {
+	display: block;
+	font-size: 110%;
+	width: 261px;
+	height: 50px;
+}
+
+.error {
+    	margin: -2.4rem 0 0 12rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+	.mainbox {
+		display: flex;
+		justify-content: space-between;
+		width: 900px;
+		margin: 0 auto;
+	}
+
+	.boxone {
+		width: 440px;
+		display: block;
+		margin-right: 1.5rem;
+		padding: .5rem;
+	}
+
+	.boxtwo {
+		width: 440px;
+		margin-top: 0;
+		margin-left: .8rem;
+	}
+
+	.buttons {
+    	grid-template-columns: auto auto auto;
+    	grid-gap: 1rem;	
+    	margin-bottom: 0;
+    }
+
+     .tip {
+    	font-size: 90%;
+    	margin-top: 1.5rem;
+    }
+
+    .person {
+    	font-size: 90%;
+    }
+
+    .price {
+    	font-size: 290%;
+    }
+
+    .button {
+    	width: 120px;
+    	font-size: 150%;
+    	height: 50px;
+    }
+
+    .custom {
+    	width: 120px;
+    }
+
+    .custom::placeholder {
+    	font-size: 110%;
+    	text-align: center;
+    	padding-right: 0;
+    }
+
+    input {
+    	font-size: 150%;
+    	width: 360px;
+    }
+
+    .reset {
+    	width: 321px;
+    	margin: 5rem auto 0 auto;
+    }
+
+    .select {
+    	margin-top: 3rem;
+    }
+
+    .formtwo {
+    	margin-top: 1.5rem;
+    }
+
+    .flexone {
+    	margin: 0 1rem 0 1rem;
+    }
+
+    .flextwo {
+    	margin: 0 1rem 0 1rem;
+    }
+
+    .error {
+    	margin: -2.2rem 0 0 15.8rem;
+    }
+}
