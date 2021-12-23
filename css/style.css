@@ -175,12 +175,12 @@ input {
     	font-size: 220%;
     	display: block;
     	margin: 0 auto;
-    	width: 290px;
+    	width: 270px;
     }
 
     .mainbox {
-    	padding: 2rem;
-    	width: 375px;
+    	padding: 1rem;
+    	width: 320px;
     	margin: 0 auto;
     }
 
@@ -191,13 +191,13 @@ input {
     }
 
     .button {
-    	font-size: 160%;
-    	width: 146.5px;
+    	font-size: 140%;
+    	width: 136px;
     	height: 50px;
     }
 
     .custom {
-        width: 146.5px;
+        width: 136px;
         height: 50px;   
     }
 
@@ -227,7 +227,7 @@ input {
     .reset {
 	display: block;
 	font-size: 110%;
-	width: 261px;
+	width: 240px;
 	height: 50px;
 }
 
